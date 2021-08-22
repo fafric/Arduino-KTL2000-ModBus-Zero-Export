@@ -75,7 +75,7 @@ void setup()
 
 void SendPowerLimitToInverter (){
   uint16_t result2;
-  result2 = node1.writeSingleRegister(40234, 10); 
+  result2 = node1.writeSingleRegister(40234, Crnt_Per); 
    if (result2 == node1.ku8MBSuccess) {
     Serial.print("Data Sent....");
    }
